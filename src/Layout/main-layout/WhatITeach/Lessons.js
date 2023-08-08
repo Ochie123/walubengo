@@ -1,7 +1,6 @@
 import React from 'react';
 import Box from '@mui/joy/Box';
 import Lesson from './Lesson';
-import MKTypography from '../MKTypography';
 
 import styled from "styled-components";
 

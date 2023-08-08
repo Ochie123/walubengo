@@ -15,7 +15,7 @@ function UpcomingSoon() {
     <div className="page-width">
       <div className="row justify-content-center lead text-blue mb-sm-6 mb-4">
       <Typography
-                    fontSize="48px"
+                    fontSize="35px"
                     align="center"
                     borderRadius=""
                     px={0.5}

@@ -16,7 +16,7 @@ export default function PromotionalFull() {
     <div className="promotional-full-container">
        <Typography
                     fontSize="28px"
-                    align="center"
+                   
                     borderRadius=""
                     px={0.5}
                     mr={0.5}

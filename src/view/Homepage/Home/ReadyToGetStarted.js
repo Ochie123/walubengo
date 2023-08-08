@@ -1,5 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box"
+import { useMediaQuery } from "@mui/material"
 import Typography from "@mui/joy/Typography"
 //import Typography from '@mui/material/Typography';
 import Zoom from "@mui/material/Zoom"
@@ -19,6 +20,7 @@ export default function ReadyToGetStarted({
     },
   };
   const [checked, setChecked] = React.useState(true)
+  const mobileDevice = useMediaQuery("(max-width:650px)")
 
   return (
     <>
@@ -38,19 +40,18 @@ export default function ReadyToGetStarted({
           <div className="">
             <div className="row justify-content-center">
               <div className="row justify-content-center">
-              <Box sx={{ display: "flex" }}>
-                <Zoom
-                  in={checked}
-                  style={{ transitionDelay: checked ? "500ms" : "0ms" }}
-                >         
-            <Typography variant="h2"  color="" gutterBottom>
-                  Ready to get started with Public speaking?
-                  </Typography>
-                  </Zoom>
+              <Typography align="center" variant={mobileDevice ? 'h5' : 'h2'} color="">
+              <Box>
+        
+                  Get Started with Public speaking
+                 
+           
               </Box> 
+              </Typography>
                 <p className="lead mb-sm-6 mb-4">
                 <Typography
-                    fontSize="28px"
+                    fontSize="18px"
+                    align="center"
                     borderRadius=""
                     px={0.5}
                     mr={0.5}

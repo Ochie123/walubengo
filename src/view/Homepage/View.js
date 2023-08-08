@@ -10,6 +10,8 @@ import Lessons from "../../Layout/main-layout/WhatITeach/Lessons";
 
 import ReadyToGetStarted from "./Home/ReadyToGetStarted";
 import Testimonials from '../../Layout/main-layout/Testimonials/Testimonials'
+import TopTestimonial from '../../Layout/main-layout/Testimonials/TopTestimonial'
+
 const Main = () => {
   const mobileDevice = useMediaQuery("(max-width:650px)")
 
@@ -19,9 +21,9 @@ const Main = () => {
     {mobileDevice ? (
  
     <Box >
-          <Typography variant={mobileDevice ? 'h4' : 'h1'}>
+          <Typography variant={mobileDevice ? 'h4' : 'h2'}>
            
-          </Typography>
+         
          <PromotionalFull/>
     
          <Learn/>
@@ -29,8 +31,10 @@ const Main = () => {
          <Lessons/>
        <ReadyToGetStarted/>
        
-        <UpcomingSoon/>   
+        <UpcomingSoon/>  
+        <TopTestimonial/> 
         <Testimonials/>
+        </Typography>
     </Box>
   
     ) : (
@@ -43,6 +47,7 @@ const Main = () => {
           <ReadyToGetStarted/>
          
         <UpcomingSoon/>
+        <TopTestimonial/>
         <Testimonials/>
         </div>
         </>
