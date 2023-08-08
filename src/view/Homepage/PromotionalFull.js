@@ -33,7 +33,9 @@ export default function PromotionalFull() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <div className="row justify-content-center">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/WnC3DzH/walubengo-removebg-preview.png" alt="walubengo-removebg-preview" border="0" /></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/WnC3DzH/walubengo-removebg-preview.png" alt="walubengo-removebg-preview" border="0"
+            style={{ width: "100%", border:"0", height: "100%" }}
+            /></a>
 
             </div>
             
